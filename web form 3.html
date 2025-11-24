@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Etkinlik Başvuru Formu</title>
+</head>
+<body>
+
+    <h1>Etkinlik Başvuru Formu</h1>
+    <p>Aşağıdaki formu doldurarak ücretsiz eğitim etkinliğimize kayıt olabilirsiniz.</p>
+
+    <img src="https://img-c.udemycdn.com/course/750x422/1408632_0134_2.jpg" alt="Etkinlik Görseli">
+
+    <hr>
+
+    <!-- Etkinlik Bilgi Listeleri -->
+    <h2>Etkinlik Detayları</h2>
+
+    <ul>
+        <li><b>Tarih:</b> 12 Aralık 2025</li>
+        <li><b>Saat:</b> 10:00 - 16:00</li>
+        <li><b>Yer:</b> Teknoloji Kampüsü - Konferans Salonu</li>
+    </ul>
+
+    <p>Konular:</p>
+    <ol>
+        <li>Web Geliştirme Temelleri</li>
+        <li>HTML Form Uygulamaları</li>
+        <li>Mini Uygulama Geliştirme</li>
+    </ol>
+
+    <hr>
+
+    <form>
+
+        <!-- FIELDSET: Kayıt Bilgileri -->
+        <fieldset>
+            <legend><b>Kayıt Bilgileri</b></legend>
+
+            <table cellpadding="5">
+                <tr>
+                    <td><label for="fullname">Ad Soyad:</label></td>
+                    <td><input type="text" id="fullname" name="fullname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Telefon:</label></td>
+                    <td>
+                        <input type="tel" id="phone" name="phone"
+                               pattern="[0-9]{10}" placeholder="5551234567">
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <label for="grade">Öğrenci Durumu:</label>
+            <select id="grade" name="grade">
+                <option value="lise">Lise Öğrencisi</option>
+                <option value="uni">Üniversite Öğrencisi</option>
+                <option value="mezun">Mezun</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <!-- FIELDSET: Atölyeler -->
+        <fieldset>
+            <legend><b>Atölye Tercihleri</b></legend>
+
+            <p><b>Katılmak İstediğiniz Atölyeler:</b></p>
+
+            <label for="html">
+                <input type="checkbox" id="html" name="workshop" value="html">
+                HTML Başlangıç
+            </label><br>
+
+            <label for="form">
+                <input type="checkbox" id="form" name="workshop" value="form">
+                Form Yapıları ve Kullanımı
+            </label><br>
+
+            <label for="project">
+                <input type="checkbox" id="project" name="workshop" value="project">
+                Mini Proje Geliştirme
+            </label>
+
+            <br><br>
+
+            <p><b>Cinsiyet:</b></p>
+
+            <label for="erkek">
+                <input type="radio" id="erkek" name="gender" value="erkek">
+                Erkek
+            </label><br>
+
+            <label for="kadin">
+                <input type="radio" id="kadin" name="gender" value="kadin">
+                Kadın
+            </label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- FIELDSET: Dosya ve Not -->
+        <fieldset>
+            <legend><b>Ek Bilgiler</b></legend>
+
+            <label for="photo">Profil Fotoğrafı Yükle:</label>
+            <input type="file" id="photo" name="photo" accept=".jpg,.png">
+            <br><br>
+
+            <label for="note">Etkinlikle ilgili notunuz varsa yazın:</label><br>
+            <textarea id="note" name="note" rows="4" cols="50"
+                      placeholder="Varsa özel bir isteğiniz..."></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- Etkinlik Programı Tablosu -->
+        <h2>Etkinlik Programı</h2>
+
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Saat</th>
+                <th>Etkinlik</th>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>Açılış & Tanışma</td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td>Web Temelleri Eğitimi</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>Atölye Çalışmaları</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td>Proje Sunumları</td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <!-- GÖRSEL BUTONLAR -->
+        <input type="image"
+               src="https://e7.pngegg.com/pngimages/295/665/png-clipart-submit-button-illustration-submit-button-icons-logos-emojis-submit.png"
+               alt="Gönder" width="120">
+
+        <input type="image"
+               src="https://w7.pngwing.com/pngs/49/360/png-transparent-reset-button-reset-button-push-button-computer-icons-restart-miscellaneous-electronics-trademark.png"
+               alt="Temizle" width="120"
+               onclick="this.form.reset(); return false;">
+
+    </form>
+
+    <br><br>
+
+    <p>Diğer etkinlikler için:
+        <a href="https://www.google.com">Etkinlik sayfamızı ziyaret edin</a>
+    </p>
+
+</body>
+</html>
