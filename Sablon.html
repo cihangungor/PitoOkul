@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Kullanımı Örneği</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Üst Başlık Bölümü */
+        .header {
+            display: flex;
+            background-color: #2c3e50;
+            padding: 20px;
+            color: white;
+        }
+
+        .logo {
+            width: 20%;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .banner {
+            width: 60%;
+            text-align: center;
+            font-size: 28px;
+            padding: 10px;
+            background-color: #34495e;
+            border-radius: 5px;
+        }
+
+        .social-media {
+            width: 20%;
+            text-align: right;
+        }
+
+        .social-media a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: #3498db;
+            transform: scale(1.2);
+        }
+
+        /* Ana İçerik Bölümü */
+        .main-content {
+            display: flex;
+            min-height: 500px;
+            margin: 20px;
+        }
+
+        .sidebar-left {
+            width: 20%;
+            background-color: #e74c3c;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .content-right {
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Footer Bölümü */
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        /* Ek Stiller */
+        h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .sidebar-left h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Başlık Bölümü -->
+    <div class="header">
+        <div class="logo">
+            🌟 LOGO
+        </div>
+        <div class="banner">
+            HOŞGELDİNİZ - BANNER ALANI
+        </div>
+        <div class="social-media">
+            <a href="#">📘 Facebook</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">📷 Instagram</a>
+        </div>
+    </div>
+
+    <!-- Ana İçerik Bölümü -->
+    <div class="main-content">
+        <!-- Sol Kenar (Reklam) -->
+        <div class="sidebar-left">
+            <h3>REKLAM ALANI</h3>
+            <p>📢 Özel İndirim!</p>
+            <p>🎁 Kampanyalarımız</p>
+            <p>🛍️ Yeni Ürünler</p>
+            <p>💰 Avantajlı Fiyatlar</p>
+        </div>
+
+        <!-- Sağ İçerik -->
+        <div class="content-right">
+            <h2>Ana İçerik Bölümü</h2>
+            <p>Bu bölüm sitenizin ana içeriğinin gösterileceği alandır. Makaleler, haberler, ürün bilgileri gibi içerikler buraya yerleştirilir.</p>
+            
+            <h2>Div Nedir?</h2>
+            <p>Div elementi, HTML'de içerik gruplamak için kullanılan bir kapsayıcıdır. CSS ile şekillendirilerek sayfa düzeni oluşturulur.</p>
+            
+            <h2>Örnek İçerik</h2>
+            <p>Bu örnekte, div elementleri kullanılarak klasik bir web sayfası düzeni oluşturulmuştur:</p>
+            <ul>
+                <li>Header bölümü üç parçaya ayrılmış (logo, banner, sosyal medya)</li>
+                <li>Ana içerik sol sidebar ve sağ içerik alanı olarak bölünmüş</li>
+                <li>Sol sidebar %20 genişlikte reklam alanı</li>
+                <li>Sağ içerik %80 genişlikte ana içerik alanı</li>
+                <li>Footer tüm sayfanın altında</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Bölümü -->
+    <div class="footer">
+        <p>&copy; 2024 Tüm Hakları Saklıdır | İletişim: info@example.com</p>
+        <p>Adres: İstanbul, Türkiye</p>
+    </div>
+
+</body>
+</html>
